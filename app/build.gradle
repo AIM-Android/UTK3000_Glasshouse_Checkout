@@ -1,0 +1,67 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.advantech.utk3000_glasshouse_checkout'
+    compileSdk libs.versions.compileSdk.get().toInteger()
+
+    defaultConfig {
+        applicationId "com.advantech.utk3000_glasshouse_checkout"
+        minSdk libs.versions.minSdk.get().toInteger()
+        targetSdk libs.versions.targetSdk.get().toInteger()
+
+        versionCode libs.versions.versionCode.get().toInteger()
+        versionName libs.versions.versionName.get().toString()
+
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'android'
+            keyPassword 'android'
+            storePassword 'android'
+            storeFile file('../platform.jks')
+            v2SigningEnabled true
+        }
+    }
+
+    applicationVariants.configureEach { variant ->
+        variant.outputs.configureEach {
+            outputFileName = "${rootProject.name}_v${defaultConfig.versionName}_${variant.buildType.name}.apk"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation files('libs/aidc_uhf_sdk.jar')
+    implementation files('libs/nls_uhf_lib.jar')
+
+    implementation files('libs/ESC_SDK_V1.24.02.jar')
+
+    implementation libs.appcompat
+    implementation libs.material
+
+    implementation libs.android.core
+    implementation libs.google.core
+    implementation libs.google.gson
+}

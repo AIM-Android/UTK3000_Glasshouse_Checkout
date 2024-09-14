@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">UTK3000_Glasshouse_Checkout</string>
+    <string name="txt_dev_ttyacm0">/dev/ttyACM0</string>
+    <string name="txt_connect">connect</string>
+    <string name="hint_shirt">shirt</string>
+    <string name="hint__39_9">39.9 ￥</string>
+    <string name="hint_12">12</string>
+    <string name="txt_product_icon_title">品项</string>
+    <string name="txt_product_name_title">名称</string>
+    <string name="txt_product_price_title">价格</string>
+    <string name="txt_product_count_title">数量</string>
+    <string name="txt_delete_title_ingone">删除</string>
+    <string name="txt_scan_complete">扫描完成，结账</string>
+    <string name="txt_cancer">扫描商品</string>
+    <string name="txt_start_pay">开始付款吧</string>
+    <string name="txt_pay_tips">请将手机靠近扫码，哔一声即可</string>
+    <string name="txt_product_count">商品总数 :</string>
+    <string name="hint_18">12</string>
+    <string name="txt_pay_number">支付金额 :</string>
+    <string name="hint_108_20">108.20</string>
+    <string name="txt_checkout_way">支付方式 :</string>
+    <string name="hint_weixin">微信</string>
+    <string name="txt_checkout_tips">请将商品置于结账桶中</string>
+    <string name="txt_checkout_start">开始结账吧</string>
+    <string name="txt_pay_success_title">支付成功</string>
+    <string name="txt_bills_data_tips">请从右下方收据机索取购物收据</string>
+    <string name="txt_restart">打印小票，并回到首页</string>
+    <string-array name="activity_main_sample_2inch_receipt">
+        <item>"             打印机电子技术有限公司\n"</item>
+        <item>"                     销售单\n"</item>
+        <item>"日期：2013-08-20\n"</item>
+        <item>"仓库：二楼A仓库\n"</item>
+        <item>"经手人：小张\n"</item>
+        <item>"------------------------------------------------\n"</item>
+        <item>"名称                                        金额\n"</item>
+        <item>"------------------------------------------------\n"</item>
+        <item>"LPA                                       777.00\n"</item>
+        <item>"------------------------------------------------\n"</item>
+        <item>"LPB                                       888.00\n"</item>
+        <item>"------------------------------------------------\n"</item>
+        <item>"LPC                                       999.00\n"</item>
+        <item>"------------------------------------------------\n"</item>
+        <item>"合计金额                                 2664.00\n"</item>
+        <item>"------------------------------------------------\n"</item>
+        <item>"操作员：管理员\n"</item>
+        <item>"时间：2013-08-20 09:30:50\n"</item>
+        <item>"电话：0000 - 88888888\n"</item>
+    </string-array>
+</resources>
