@@ -15,7 +15,7 @@ chmod +rwx /dev/ttyACM0
 
 说明：由于截图是构造数据，上哦商品价格没有进行填充，看到的数字仅为 TextView 的 hint，
 
-![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/blob/master/screenshot/scan.png)
-![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/blob/master/screenshot/pay.png)
-![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/blob/master/screenshot/print.png)
-![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/blob/master/screenshot/billes.png)
+![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/tree/main/screenshot/scan.png)
+![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/tree/main/screenshot/pay.png)
+![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/tree/main/screenshot/print.png)
+![](https://github.com/AIM-Android/UTK3000_Glasshouse_Checkout/tree/main/screenshot/billes.png)
