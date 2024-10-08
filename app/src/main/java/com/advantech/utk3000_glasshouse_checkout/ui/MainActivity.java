@@ -13,6 +13,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -95,7 +96,9 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(layoutManager);
         mAdapter = new ProductAdapter(this);
         mRecyclerView.setAdapter(mAdapter);
-        LinearLayout cancerButton = findViewById(R.id.btn_cancer_transaction);
+        TextView numberTextView = findViewById(R.id.tv_count_number);
+        TextView priceTextView = findViewById(R.id.tv_count_price);
+        Button cancerButton = findViewById(R.id.btn_cancer_transaction);
         cancerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
                 count = productList.size();
                 mAdapter.setDataList(productList);
                 Log.d(TAG, "count : " + count + ", price : " + price);
+                numberTextView.setText(String.valueOf(count));
+                priceTextView.setText(String.valueOf(price));
                 Log.d(TAG, "products : " + productList.toString());
                 epcBuffer.clear();
             }

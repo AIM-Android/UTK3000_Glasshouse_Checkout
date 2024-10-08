@@ -11,7 +11,7 @@ minSdk = "24"
 targetSdk = "33"
 
 versionCode = "1"
-versionName = "1.0.1"
+versionName = "1.0.3"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 

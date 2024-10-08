@@ -12,17 +12,14 @@
         android:theme="@style/Theme.UTK3000_Glasshouse_Checkout" >
         <activity
             android:name=".ui.PayActivity"
-            android:screenOrientation="portrait"
             android:exported="false"
             tools:ignore="DiscouragedApi,LockedOrientationActivity" />
         <activity
             android:name=".ui.PrintActivity"
-            android:screenOrientation="portrait"
             android:exported="false"
             tools:ignore="DiscouragedApi,LockedOrientationActivity" />
         <activity
             android:name=".ui.MainActivity"
-            android:screenOrientation="portrait"
             android:exported="true"
             tools:ignore="DiscouragedApi,LockedOrientationActivity">
             <intent-filter>
